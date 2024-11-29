@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simulação de Biometria Digital"
+        android:textSize="20sp"
+        android:textColor="#333"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Área de captura -->
+    <ImageView
+        android:id="@+id/ivDigital"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_fingerprint"
+        android:contentDescription="Ícone de digital"
+        android:tint="#888"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Mensagem de status -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toque no sensor para capturar a digital"
+        android:textSize="16sp"
+        android:textColor="#555"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botão para simular -->
+    <Button
+        android:id="@+id/btnSimularCaptura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simular Captura"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="#FFF" />
+
+</LinearLayout>
